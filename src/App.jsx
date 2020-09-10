@@ -36,7 +36,7 @@ class App extends React.Component {
   /*Write an addStudent method here*/
   addStudent(studentName) {
     this.setState({
-      studentName: this.state.studentName.concat(studentName)
+      students: this.state.studentName.concat(studentName)
     });
   }
 
@@ -69,7 +69,6 @@ class App extends React.Component {
     }
 
     /* Change below to render students*/
-
     if (this.state.buttonClicked === "students") {
       tabChoice = (
         <List
